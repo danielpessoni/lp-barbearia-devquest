@@ -10,11 +10,11 @@ const Header = () => {
             </div>
             <nav className="flex items-center border">
                 <ul className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 w-full md:w-auto">
-                    <li className="text-white hover:text-[#D4Af37] transition-colors duration-300 text-left md:text-center py-2 md:py-0 cursor-pointer"
+                    <li className="text-white hover:text-yellow-primary transition-colors duration-300 text-left md:text-center py-2 md:py-0 cursor-pointer"
                     >Início</li>
-                    <li className="text-white hover:text-[#D4Af37] transition-colors duration-300 text-left md:text-center py-2 md:py-0 cursor-pointer"
+                    <li className="text-white hover:text-yellow-primary transition-colors duration-300 text-left md:text-center py-2 md:py-0 cursor-pointer"
                     >Serviços</li>
-                    <li className="text-white hover:text-[#D4Af37] transition-colors duration-300 text-left md:text-center py-2 md:py-0 cursor-pointer"
+                    <li className="text-white hover:text-yellow-primary transition-colors duration-300 text-left md:text-center py-2 md:py-0 cursor-pointer"
                     >Contato</li>
 
                 </ul>
