@@ -4,7 +4,9 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export const Contact = () => {
     return (
-        <section className="py-16 lg:py-24 bg-[#0A0A0A]">
+        <section 
+        id="contact"
+        className="py-16 lg:py-24 bg-[#0A0A0A]">
             <div className="text-center">
                 <h2 className="text-white mb-4">Contato</h2>
             </div>
@@ -53,7 +55,7 @@ export const Contact = () => {
                         className="w-full bg-yellow-primary"
                     >
                         <div className="flex items-center justify-center gap-2">
-                            <Phone size={18} />
+                            <FaWhatsapp size={18} />
                             Chamar no WhatsApp agora
                         </div>
                     </Button>

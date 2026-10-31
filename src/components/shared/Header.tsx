@@ -10,6 +10,13 @@ export const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <header className="fixed top-0 left-0 right-0 bg-[#0A0A0A] backdrop-blur-sm border-b border-[rgba(212,175,55,0.2)] z-50">
             <div className="flex justify-between items-center px-4 md:px-6 py-4">
@@ -26,12 +33,32 @@ export const Header = () => {
                 {/* Menu Desktop */}
                 <nav className="hidden md:flex items-center">
                     <ul className="flex items-center gap-8">
-                        <li className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer"
-                        >Início</li>
-                        <li className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer"
-                        >Serviços</li>
-                        <li className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer"
-                        >Contato</li>
+                        <li>
+                            <button
+                                type="button"
+                                className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer"
+                                onClick={() => scrollToSection("hero")}
+                            >Início
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => scrollToSection("services")}
+                                className="text-white hover:text-yellow-primary transition-colors duration-300"
+                            >
+                                Serviços
+                            </button>
+                        </li>
+
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => scrollToSection("contact")}
+                                className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer"
+                            >Contato
+                            </button>
+                        </li>
 
                         <li>
                             <Button
@@ -75,13 +102,40 @@ export const Header = () => {
             >
                 <ul className="flex flex-col px-4 pb-4 gap-4 bg-[#0A0A0A]">
                     <li className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer py-2 border-b border-[rgba(212,175,55,0.1)]">
-                        Inicio
+                        <button
+                            type="button"
+                            onClick={() => {
+                                scrollToSection("hero");
+                                setIsMenuOpen(false);
+                            }}
+                            className="block w-full text-left text-white hover:text-yellow-primary transition-colors duration-300"
+                        >
+                            Início
+                        </button>
+                    </li>
+                    <li className="py-2 border-b border-[rgba(212,175,55,0.1)]">
+                        <button
+                            type="button"
+                            onClick={() => {
+                                scrollToSection("services");
+                                setIsMenuOpen(false);
+                            }}
+                            className="block text-white hover:text-yellow-primary transition-colors duration-300"
+                        >
+                            Serviços
+                        </button>
                     </li>
                     <li className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer py-2 border-b border-[rgba(212,175,55,0.1)]">
-                        Serviços
-                    </li>
-                    <li className="text-white hover:text-yellow-primary transition-colors duration-300 cursor-pointer py-2 border-b border-[rgba(212,175,55,0.1)]">
-                        Contato
+                        <button
+                            type="button"
+                            onClick={() => {
+                                scrollToSection("contact");
+                                setIsMenuOpen(false);
+                            }}
+                            className="block w-full text-left text-white hover:text-yellow-primary transition-colors duration-300"
+                        >
+                            Contato
+                        </button>
                     </li>
                     <li className="pt-2">
                         <Button

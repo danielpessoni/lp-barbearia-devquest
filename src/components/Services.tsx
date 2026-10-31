@@ -3,7 +3,6 @@ import { ServiceCard } from "./ServiceCard"
 import { Button } from "./shared/Button"
 
 export const Services = () => {
-
     const services = [
         {
             icon: <Scissors size={24} />,
@@ -44,7 +43,10 @@ export const Services = () => {
     ]
 
     return (
-        <section className="py-16 lg:py-24 bg-[#0A0A0A]">
+        <section
+            id="services"
+            className="py-16 lg:py-24 bg-[#0A0A0A] scroll-mt-20"
+        >
             <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-white mb-4">Serviços</h2>
