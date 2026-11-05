@@ -52,7 +52,7 @@ export const Contact = () => {
                         onClick={() =>
                             window.open("https://wa.me/558599999999999", "_blank")
                         }
-                        className="w-full bg-yellow-primary"
+                        className="w-full"
                     >
                         <div className="flex items-center justify-center gap-2">
                             <FaWhatsapp size={18} />

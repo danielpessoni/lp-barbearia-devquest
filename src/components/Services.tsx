@@ -5,37 +5,37 @@ import { Button } from "./shared/Button"
 export const Services = () => {
     const services = [
         {
-            icon: <Scissors size={24} />,
+            icon: <Scissors size={24} className="text-amber-600" />,
             title: "Corte Masculino",
             description: "Corte personalizado com técnicas modernas e acabamento impecável",
             price: "R$ 35"
         },
         {
-            icon: <User size={24} />,
+            icon: <User size={24} className="text-amber-600" />,
             title: "Barba Completa",
             description: "Design, aparação e hidratação para deixar sua barba perfeita",
             price: "R$ 30"
         },
         {
-            icon: <Package size={24} />,
+            icon: <Package size={24} className="text-amber-600" />,
             title: "Corte + Barba",
             description: "Combo completo com corte de cabelo e barba alinhada",
             price: "R$ 60"
         },
         {
-            icon: <Eye size={24} />,
+            icon: <Eye size={24} className="text-amber-600" />,
             title: "Sobrancelha",
             description: "Design e alinhamento profissional de sobrancelhas",
             price: "R$ 15"
         },
         {
-            icon: <Palette size={24} />,
+            icon: <Palette size={24} className="text-amber-600" />,
             title: "Pigmentação",
             description: "Pigmentação capilar para cobertura de fios brancos",
             price: "R$ 40"
         },
         {
-            icon: <Footprints size={24} />,
+            icon: <Footprints size={24} className="text-amber-600" />,
             title: "Pezinho",
             description: "Acabamento perfeito na nuca e contornos",
             price: "R$ 10"
